@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BubbleIndicatorView">
+        <attr name="biv_radius" format="dimension"/>
+        <attr name="biv_distance" format="dimension"/>
+        <attr name="biv_dotCount" format="integer"/>
+        <attr name="biv_color" format="color"/>
+    </declare-styleable>
+</resources>
