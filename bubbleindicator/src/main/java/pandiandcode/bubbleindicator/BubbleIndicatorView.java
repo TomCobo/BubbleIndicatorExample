@@ -121,7 +121,6 @@ public class BubbleIndicatorView extends RelativeLayout {
         mDistance = 30;
         mDotsCount = 3;
         mRadius = 30;
-        mMaxDiameter = calculateMaxDiameter();
         mWidth = getContext().getResources().getDisplayMetrics().widthPixels;
 
         if (attrs != null) {
@@ -133,6 +132,7 @@ public class BubbleIndicatorView extends RelativeLayout {
             mDistance = typedArray.getDimensionPixelSize(R.styleable.BubbleIndicatorView_biv_distance, mDistance);
             mColor = typedArray.getColor(R.styleable.BubbleIndicatorView_biv_color, mColor);
         }
+        mMaxDiameter = calculateMaxDiameter();
         setMinimumHeight(mMaxDiameter);
 
         initIndicators();
