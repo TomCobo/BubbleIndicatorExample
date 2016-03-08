@@ -51,6 +51,10 @@ public class BubbleIndicatorView extends RelativeLayout {
             Indicator newIndicator = (Indicator) getChildAt(position);
             Indicator oldIndicator = null;
 
+            if (newIndicator == null) {
+                return;
+            }
+
             if (mSelectedPosition >= 0) {
                 oldIndicator = (Indicator) getChildAt(mSelectedPosition);
             }
