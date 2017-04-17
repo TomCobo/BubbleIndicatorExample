@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Implemtented ButterKnife
-    private void referenceUI() {
+    private void referenceUI() { 
         mViewPager = (ViewPager) findViewById(R.id.pagerStages);
         mPagerIndicator = (BubbleIndicatorView) findViewById(R.id.pageIndicator);
     }
