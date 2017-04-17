@@ -21,11 +21,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mViewPager = (ViewPager) findViewById(R.id.pagerStages);
-        mPagerIndicator = (BubbleIndicatorView) findViewById(R.id.pageIndicator);
+        referenceUI();
         mViewPager.addOnPageChangeListener(mOnPageChangeListener);
 
         setupAdapter();
+    }
+
+    private void referenceUI() {
+        mViewPager = (ViewPager) findViewById(R.id.pagerStages);
+        mPagerIndicator = (BubbleIndicatorView) findViewById(R.id.pageIndicator);
     }
 
     private void setupAdapter() {
